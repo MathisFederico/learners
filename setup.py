@@ -4,7 +4,7 @@ import versioneer
 VERSION = '1.0.4'
 
 setup(
-    name         = "learners",
+    name         = "sensorymotor-learners",
     version      = VERSION,
     cmdclass     = versioneer.get_cmdclass(),
     author       = "Fabien Benureau",
