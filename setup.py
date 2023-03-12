@@ -1,7 +1,13 @@
 from setuptools import setup
+import os
 
 import versioneer
 VERSION = '1.0.4'
+
+with open("readme.md", "r") as readme_file:
+    README = readme_file.read()
+
+print(README)
 
 setup(
     name         = "sensorymotor-learners",
@@ -10,6 +16,7 @@ setup(
     author       = "Fabien Benureau",
     author_email = "fabien.benureau@gmail.com",
     url          = 'github.com/humm/learners.git',
+    long_description = README,
     download_url = 'https://github.com/humm/learners/tarball/{}'.format(VERSION),
     maintainer   = 'Fabien Benureau',
     description  = "A collection of simple incremental forward and inverse model learning algorithms",
