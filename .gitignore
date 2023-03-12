@@ -42,3 +42,6 @@ nosetests.xml
 
 # iPython Notebooks
 .ipynb_checkpoints/
+
+# Virtual environments
+venv
